@@ -1,0 +1,52 @@
+{
+  "schemaVersion": "2.0.0",
+  "info": {
+    "title": "Flowtriq DDoS Detection",
+    "id": {
+      "group": null,
+      "name": "TA-flowtriq",
+      "version": "1.0.0"
+    },
+    "author": [
+      {
+        "name": "Flowtriq",
+        "email": "support@flowtriq.com",
+        "company": "Flowtriq"
+      }
+    ],
+    "releaseDate": null,
+    "description": "Receive and analyze DDoS detection events from Flowtriq. Provides field extractions, lookups, event types, tags, and dashboards for Flowtriq incident data sent via HEC.",
+    "classification": {
+      "intendedAudience": "Network Security Engineers, SOC Analysts",
+      "categories": ["Security, Fraud & Compliance", "IT Operations"],
+      "developmentStatus": "Production/Stable"
+    },
+    "commonInformationModels": null,
+    "license": {
+      "name": "MIT",
+      "text": null,
+      "uri": null
+    },
+    "privacyPolicy": {
+      "name": null,
+      "text": null,
+      "uri": null
+    },
+    "releaseNotes": {
+      "name": "1.0.0",
+      "text": "Initial release with field extractions, lookups, event types, tags, and overview dashboard.",
+      "uri": null
+    }
+  },
+  "dependencies": null,
+  "tasks": null,
+  "inputGroups": null,
+  "incompatibleApps": null,
+  "platformRequirements": {
+    "splunk": {
+      "Enterprise": ">=8.0"
+    }
+  },
+  "supportedDeployments": ["_standalone", "_distributed", "_search_head_clustering"],
+  "targetWorkloads": ["_search_heads"]
+}

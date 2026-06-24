@@ -1,0 +1,17 @@
+attack_family,attack_family_label,attack_category
+udp_flood,UDP Flood,Volumetric
+tcp_syn,TCP SYN Flood,Protocol
+tcp_ack,TCP ACK Flood,Protocol
+tcp_rst,TCP RST Flood,Protocol
+icmp_flood,ICMP Flood,Volumetric
+dns_amplification,DNS Amplification,Amplification
+ntp_amplification,NTP Amplification,Amplification
+memcached_amplification,Memcached Amplification,Amplification
+ssdp_amplification,SSDP Amplification,Amplification
+chargen_amplification,Chargen Amplification,Amplification
+cldap_amplification,CLDAP Amplification,Amplification
+gre_flood,GRE Flood,Volumetric
+ip_fragmentation,IP Fragmentation,Protocol
+dns_flood,DNS Flood,Application
+http_flood,HTTP Flood,Application
+unknown,Unknown,Unknown

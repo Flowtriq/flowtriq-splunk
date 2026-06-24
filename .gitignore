@@ -1,0 +1,10 @@
+# Splunk local overrides
+TA-flowtriq/local/
+TA-flowtriq/metadata/local.meta
+
+# macOS
+.DS_Store
+
+# Packaged archives
+*.spl
+*.tar.gz

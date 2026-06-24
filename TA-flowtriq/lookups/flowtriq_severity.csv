@@ -1,0 +1,5 @@
+severity,severity_label,severity_order
+low,Low,1
+medium,Medium,2
+high,High,3
+critical,Critical,4
