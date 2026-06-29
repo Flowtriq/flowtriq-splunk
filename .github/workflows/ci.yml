@@ -1,0 +1,27 @@
+name: CI
+on:
+  push:
+    branches: [main, staging]
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate conf syntax
+        run: |
+          for f in $(find . -name "*.conf" -o -name "*.meta"); do
+            echo "Checking $f..."
+            if grep -Pn '[\x80-\xff]' "$f"; then
+              echo "ERROR: Non-ASCII characters in $f"
+              exit 1
+            fi
+          done
+      - name: Validate JSON
+        run: |
+          for f in $(find . -name "*.json"); do
+            echo "Validating $f..."
+            python3 -m json.tool "$f" > /dev/null
+          done

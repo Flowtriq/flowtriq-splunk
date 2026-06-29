@@ -1,5 +1,7 @@
 # Flowtriq Splunk Technology Add-on
 
+> **[Integration Guide](https://flowtriq.com/integrations/splunk)** | **[Documentation](https://flowtriq.com/docs)** | **[Sign Up](https://flowtriq.com/signup)**
+
 Splunk TA for receiving and analyzing DDoS detection events from Flowtriq.
 
 ## What's Included
@@ -117,6 +119,14 @@ sourcetype="flowtriq:incident" event_type="attack_end"
 | eval avg_duration = tostring(avg_seconds, "duration")
 ```
 
+## Get Started
+
+Start your free 14-day trial at [flowtriq.com/signup](https://flowtriq.com/signup).
+
 ## Support
 
 support@flowtriq.com
+
+---
+
+Built by [Flowtriq](https://flowtriq.com) - Real-time DDoS detection and mitigation.
